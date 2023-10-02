@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Subspace</title>
+    <style>
+        div li span:nth-child(1) {
+            color: black;
+        }
+        
+        div li span:nth-child(2) {
+            color: rgb(122, 115, 115);
+        }
+        
+        div li {
+            line-height: 2em;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Search Endpoint</h1>
+    <div>
+        <% matchingBlogs.forEach(element => {%>
+            <li>
+                <span><%= element.id%></span>:
+                <span><%= element.title %></span>
+            </li>
+
+            <% });  %>
+    </div>
+</body>
+
+</html>
